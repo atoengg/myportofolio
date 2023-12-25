@@ -17,13 +17,34 @@ const Navbar = () => {
           <div className="flex-1">
             <a className="btn btn-ghost text-xl">{"{ atoengg }"}</a>
           </div>
-          <div className="fixed bottom-[1rem] w-90% rounded-full py-[0.25rem] px-[1.5rem] drop-shadow-sm transition duration-300 navbar-fixed md:w-[328px] left-0 right-0 mx-auto lg:py-[1rem] lg:px-[2.25rem]">
-            <ul className="menu menu-horizontal px-1 flex justify-between items-center">
-              <NavbarListItem iconNavItem={<BsHouse />} />
-              <NavbarListItem iconNavItem={<BsPerson />} />
-              <NavbarListItem iconNavItem={<BsJournal />} />
-              <NavbarListItem iconNavItem={<BsCast />} />
-              <NavbarListItem iconNavItem={<BsPersonLinesFill />} />
+          <div className="fixed bottom-[1rem] w-90% rounded-full py-[0.25rem] px-[1.5rem] drop-shadow-sm transition duration-300 navbar-fixed md:w-[500px] left-0 right-0 mx-auto lg:py-[1rem] lg:px-[2.25rem]">
+            <ul className="px-1 flex justify-between items-center">
+              <NavbarListItem
+                iconNavItem={<BsHouse />}
+                title={"Home"}
+                location={"/"}
+              />
+
+              <NavbarListItem
+                iconNavItem={<BsPerson />}
+                title={"About"}
+                location={"/aboutme"}
+              />
+              <NavbarListItem
+                iconNavItem={<BsJournal />}
+                title={"certificate"}
+                location={"/certificate"}
+              />
+              <NavbarListItem
+                iconNavItem={<BsCast />}
+                title={"Project"}
+                location={"/project"}
+              />
+              <NavbarListItem
+                iconNavItem={<BsPersonLinesFill />}
+                title={"Contact"}
+                location={"/contact"}
+              />
             </ul>
           </div>
           <BsMoonFill className="text-[18px] lg:text-xl fill-current cursor-pointer hover:opacity-50" />

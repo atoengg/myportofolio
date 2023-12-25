@@ -10,6 +10,9 @@ export default {
       screens: {
         xl: "1320px",
       },
+      width: {
+        "90%": "90%",
+      },
     },
   },
   plugins: [require("daisyui")],
