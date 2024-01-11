@@ -17,9 +17,9 @@ const Home = () => {
   return (
     <div>
       <Layouts>
-        <section>
-          <div className="hero container min-h-screen ">
-            <div className="hero-content flex flex-col lg:flex-row-reverse ">
+        <section className="lg:min-h-screen py-20">
+          <div className="hero container ">
+            <div className="hero-content flex flex-col lg:flex-row-reverse">
               <div className=" ">
                 <img
                   src={imgHero}
@@ -27,17 +27,16 @@ const Home = () => {
                 />
               </div>
               <div className="w-full self-center p-4">
-                <h1 className="text-5xl font-bold text-[#030712]">
+                <h1 className="text-3xl font-bold text-[#030712] md:text-5xl">
                   Hi, I'm {typeAnimation} <Cursor cursorStyle="|" />
                 </h1>
-                <p className="py-6 text-base leading-normal">
-                  I am a 7th semester information systems student at Trunojoyo
-                  University with an interest in web development. I've honed my
-                  skills in HTML, CSS, and JavaScript, and I've learned advanced
-                  JavaScript frameworks like React.js to create dynamic web
-                  applications. I am committed to staying up to date with the
-                  latest technology developments to continue pushing the
-                  boundaries of web development.
+                <p className="py-6 text-base leading-normal text-justify lg:text-left">
+                  I am a information systems student at Trunojoyo University.
+                  I've honed my skills in HTML, CSS, and JavaScript, and I've
+                  learned advanced JavaScript frameworks like React.js to create
+                  dynamic web applications. I am committed to staying up to date
+                  with the latest technology developments to continue pushing
+                  the boundaries of web development.
                 </p>
                 <ButtonLink
                   text={"Download CV"}
