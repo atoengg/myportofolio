@@ -86,7 +86,7 @@ const AboutMe = () => {
               </p>
 
               <Marquee autoFill pauseOnClick>
-                {dataSkills?.slice(0, 6).map((item, index) => (
+                {dataSkills?.slice(0, 7).map((item, index) => (
                   <div
                     className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer text-[#030712]"
                     key={index}
@@ -104,7 +104,7 @@ const AboutMe = () => {
               </Marquee>
 
               <Marquee autoFill pauseOnClick direction="right">
-                {dataSkills?.slice(6, 12).map((item, index) => (
+                {dataSkills?.slice(7, 14).map((item, index) => (
                   <div
                     className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer text-[#030712]"
                     key={index}

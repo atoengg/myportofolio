@@ -13,6 +13,8 @@ import iconMysql from "./src/assets/mysql.png";
 import iconPhp from "./src/assets/php.png";
 import iconBoostrap from "./src/assets/bootstrap.png";
 import iconTailwindCss from "./src/assets/tailwindcss.png";
+import iconVite from "./src/assets/vite.png";
+import iconPostman from "./src/assets/postman.png";
 
 export {
   imgHero,
@@ -30,4 +32,6 @@ export {
   iconPhp,
   iconBoostrap,
   iconTailwindCss,
+  iconVite,
+  iconPostman,
 };

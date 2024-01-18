@@ -9,8 +9,10 @@ import {
   iconMysql,
   iconNodeJs,
   iconPhp,
+  iconPostman,
   iconReact,
   iconTailwindCss,
+  iconVite,
 } from "../../../image";
 
 export const dataSkills = [
@@ -46,32 +48,42 @@ export const dataSkills = [
   },
   {
     id: 7,
+    title: "Postman",
+    icon: iconPostman,
+  },
+  {
+    id: 8,
     title: "GIT",
     icon: iconGit,
   },
   {
-    id: 8,
+    id: 9,
     title: "PHP",
     icon: iconPhp,
   },
   {
-    id: 9,
+    id: 10,
     title: "mysql",
     icon: iconMysql,
   },
   {
-    id: 10,
+    id: 11,
     title: "React JS",
     icon: iconReact,
   },
   {
-    id: 11,
+    id: 12,
     title: "Node JS",
     icon: iconNodeJs,
   },
   {
-    id: 12,
+    id: 13,
     title: "Figma",
     icon: iconFigma,
+  },
+  {
+    id: 14,
+    title: "Vite",
+    icon: iconVite,
   },
 ];
