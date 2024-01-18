@@ -15,6 +15,10 @@ import iconBoostrap from "./src/assets/bootstrap.png";
 import iconTailwindCss from "./src/assets/tailwindcss.png";
 import iconVite from "./src/assets/vite.png";
 import iconPostman from "./src/assets/postman.png";
+import imgTeamIT from "./src/assets/teamIT.jpeg";
+import imgWarlab from "./src/assets/warlab.jpeg";
+import imgPelcode from "./src/assets/pelcode.jpeg";
+import imgLeadFrontend from "./src/assets/leadFrontend.jpeg";
 
 export {
   imgHero,
@@ -34,4 +38,8 @@ export {
   iconTailwindCss,
   iconVite,
   iconPostman,
+  imgTeamIT,
+  imgWarlab,
+  imgPelcode,
+  imgLeadFrontend,
 };
