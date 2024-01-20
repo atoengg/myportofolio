@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Layouts from "../../layouts/Layouts";
-import {
-  gif,
-  imgLeadFrontend,
-  imgPelcode,
-  imgTeamIT,
-  imgWarlab,
-  mee,
-} from "../../../image";
+import { gif, mee } from "../../../image";
 import Marquee from "react-fast-marquee";
-import { dataSkills } from "../../components/DataComponents/DataComponents";
+import { BsX } from "react-icons/bs";
+import {
+  dataExperience,
+  dataSkills,
+} from "../../components/DataComponents/DataComponents";
 
 const AboutMe = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
   return (
     <>
       <Layouts>
@@ -141,230 +143,36 @@ const AboutMe = () => {
             </div>
 
             <div className="mt-8">
-              <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-                <li>
-                  <div className="timeline-middle">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-5 w-5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="timeline-start mb-10 bg-white rounded-md shadow-md p-4">
-                    <div className="md:text-end">
-                      <time className="font-mono italic ">
-                        Jan 2021 - Feb 2021
-                      </time>
-                    </div>
-                    <div className="text-lg text-[#030712] font-bold flex flex-col md:text-end">
-                      IT Team{" "}
-                      <span className="text-xs font-normal text-[#4b5563] italic ">
-                        Campus Expo ~ MAN 1 GRESIK
-                      </span>
-                    </div>
-
-                    <div className="my-2">
-                      <img
-                        src={imgTeamIT}
-                        alt="image-team-IT"
-                        className="rounded-md"
-                      />
-
-                      <ul className="text-[15px] px-4 mt-2">
-                        <li className="list-disc">
-                          technical preparation and setup.
-                        </li>
-                        <li className="list-disc">
-                          expo website or application management.{" "}
-                        </li>
-                        <li className="list-disc">
-                          creation and maintenance of digital materials: such as
-                          multimedia presentations, promotional vidios, and
-                          promotional materials to be displayed on screens or
-                          monitors.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <hr />
-                </li>
-                <li>
-                  <div className="timeline-middle">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-5 w-5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="timeline-end mb-10 bg-white rounded-md shadow-md p-4">
-                    <time className="font-mono italic">Mar 2022 - present</time>
-                    <div className="flex flex-col text-lg text-[#030712] font-bold">
-                      Laboratory Assistant{" "}
-                      <span className="text-xs font-normal text-[#4b5563] italic ">
-                        Warga Lab ~ Trunojoyo Madura University
-                      </span>
-                    </div>
-
-                    <div className="my-2">
-                      <img
-                        src={imgWarlab}
-                        alt="image-Warlab"
-                        className="rounded-md"
-                      />
-
-                      <ul className="text-[15px] px-4 mt-2">
-                        <li className="list-disc">
-                          deliver material in practicum in accordance with the
-                          module.
-                        </li>
-                        <li className="list-disc">
-                          Delivering projects to practice.
-                        </li>
-                        <li className="list-disc">
-                          Providing guidance and support .
-                        </li>
-                        <li className="list-disc">
-                          Administrative tasks: Administrative duties may be
-                          assigned to the assistant, such as managing inventory,
-                          ordering supplies, or maintaining records related to
-                          the laboratory activities.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <hr />
-                </li>
-
-                <li>
-                  <hr />
-                  <div className="timeline-middle">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-5 w-5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="timeline-start mb-10 bg-white rounded-md shadow-md p-4">
-                    <div className="md:text-end">
-                      <time className="font-mono italic">Sep 2022</time>
-                    </div>
-                    <div className="flex flex-col text-lg text-[#030712] font-bold md:text-end">
-                      Coding Training{" "}
-                      <span className="text-xs font-normal text-[#4b5563] italic ">
-                        Speaker ~ Trunojoyo Madura University
-                      </span>
-                    </div>
-                    <div className="my-2">
-                      <img
-                        src={imgPelcode}
-                        alt="image-Pelcode"
-                        className="rounded-md"
-                      />
-
-                      <ul className="text-[15px] px-4 mt-2">
-                        <li className="list-disc">
-                          Preparing the material: The speaker needs to prepare
-                          comprehensive and structured material on the basics of
-                          Python. This includes covering fundamental concepts,
-                          syntax, data types, variables, operators, flow
-                          control, data structures, and basic functions in the
-                          Python programming language.
-                        </li>
-                        <li className="list-disc">
-                          Providing examples and demonstrations
-                        </li>
-                        <li className="list-disc">
-                          assigning programming tasks using Python. This
-                          promotes active participation and deepens participants
-                          understanding.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <hr />
-                </li>
-                <li>
-                  <hr />
-                  <div className="timeline-middle">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-5 w-5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="timeline-end mb-10 bg-white rounded-md shadow-md p-4">
-                    <time className="font-mono italic">
-                      Nov 2023 - Dec 2023
-                    </time>
-                    <div className="flex flex-col text-lg text-[#030712] font-bold">
-                      Team Lead Frontend{" "}
-                      <span className="text-xs font-normal text-[#4b5563] italic">
-                        Capstone Project ~ Alterra Academy
-                      </span>
-                    </div>
-                    <div className="my-2">
-                      <img
-                        src={imgLeadFrontend}
-                        alt="image-lead-frontend"
-                        className="rounded-md"
-                      />
-
-                      <ul className="text-[15px] px-4 mt-2">
-                        <li className="list-disc">
-                          divide tasks to each member of the frontend division.
-                        </li>
-                        <li className="list-disc">
-                          Code review, managing conflicts, merging code from
-                          branch 1 with other branches.
-                        </li>
-                        <li className="list-disc">
-                          follow up with each member regarding the text, become
-                          a bridge to other divisions when there are complaints
-                          from team members.
-                        </li>
-                        <li className="list-disc">
-                          provide assessments to team members.
-                        </li>
-                        <li className="list-disc">
-                          Provide progress reports on capstone project work to
-                          PM and mentors every time there is a class.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <hr />
-                </li>
-              </ul>
+              {dataExperience?.map((item, index) => (
+                <ul
+                  className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+                  key={index}
+                >
+                  <li onClick={() => handleImageClick(item.image)}>
+                    <hr />
+                    {item.content}
+                    <hr />
+                  </li>
+                </ul>
+              ))}
             </div>
           </section>
+
+          {selectedImage && (
+            <div className="fixed top-0 left-0 w-full h-full z-[9999] bg-black bg-opacity-50 flex items-center justify-center">
+              <img
+                src={selectedImage}
+                alt="Selected Experience"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block max-w-3xl max-h-[95%] object-contain rounded-md"
+              />
+              <button
+                className="absolute top-2 right-2 text-white active:text-[#030712]"
+                onClick={() => setSelectedImage(null)}
+              >
+                <BsX size={40} />
+              </button>
+            </div>
+          )}
         </div>
       </Layouts>
     </>
