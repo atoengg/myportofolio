@@ -19,12 +19,11 @@ const AboutMe = () => {
       <Layouts>
         <div className="py-20">
           <section className="container">
-            <div className="flex flex-wrap items-center">
+            <h4 className="font-bold uppercase text-[#030712] text-xl mb-3">
+              {">_ About Me"}
+            </h4>
+            <div className="flex flex-wrap items-center gap-8 lg:gap-0">
               <div className="w-full mb-6 lg:w-6/12 lg:mb-0">
-                <h4 className="font-bold uppercase text-[#030712] text-xl mb-3">
-                  {">_ About Me"}
-                </h4>
-
                 <div className="relative">
                   <div className="text-center">
                     <img
@@ -41,12 +40,12 @@ const AboutMe = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:w-5/12">
-                <h3 className="font-semibold mb-3 lg:text-lg">
+              <div className="w-full lg:w-5/12 ">
+                <h3 className="font-semibold mb-3 text-lg lg:text-xl">
                   Hai Kidss🖖, who am i?
                 </h3>
                 <div>
-                  <p className="text-sm">
+                  <p className="text-sm leading-relaxed">
                     perkenalkan saya Mohammad Irham Al Karim dibesarkan oleh
                     Ayah dan Ibu di kota Gresik. Yapss, saya kelahiran tahun
                     2002 dari 1 saudara. Saya suka dunia IT mulai dari kelas 2
@@ -55,13 +54,13 @@ const AboutMe = () => {
                     kejadian itu saya pun tertarik untuk mendalami dunia IT.
                   </p>
 
-                  <p className="text-sm my-2">
+                  <p className="text-sm leading-relaxed my-2">
                     sebelum saya memiliki minat di dunia IT khususnya software
                     engineering, saya mempunyai hobi yang masih saya lakukan
                     sampai sekarang seperti bermain voli, hiking, dan camping.
                   </p>
 
-                  <p className="text-sm my-2">
+                  <p className="text-sm leading-relaxed my-2">
                     pertama kali saya belajar bahasa pemrogaman dimulai saat
                     saya duduk di bangku SMA tepatnya kelas 12, dengan
                     bermodalkan menonton vidio tutorial youtube. Pada waktu itu
@@ -70,7 +69,7 @@ const AboutMe = () => {
                     di bilang biasa-biasa saja.
                   </p>
 
-                  <p className="text-sm my-2">
+                  <p className="text-sm leading-relaxed mt-2">
                     tepatnya pada semester 7, saya mengikuti program dari
                     kemendikbud yakni kampus merdeka studi independent di mitra
                     alterra academy. Saya berfokus menekuni bidang front end
@@ -163,7 +162,7 @@ const AboutMe = () => {
               <img
                 src={selectedImage}
                 alt="Selected Experience"
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block max-w-3xl max-h-[95%] object-contain rounded-md"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block lg:max-w-3xl lg:max-h-[95%] object-contain rounded-md"
               />
               <button
                 className="absolute top-2 right-2 text-white active:text-[#030712]"
