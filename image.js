@@ -19,6 +19,18 @@ import imgTeamIT from "./src/assets/teamIT.jpeg";
 import imgWarlab from "./src/assets/warlab.jpeg";
 import imgPelcode from "./src/assets/pelcode.jpeg";
 import imgLeadFrontend from "./src/assets/leadFrontend.jpeg";
+import sertifProgateGit from "./src/assets/SERTIF_PROGATE_GIT.jpg";
+import sertifProgateReact from "./src/assets/SERTIF_PROGATE_REACT.jpg";
+import sertifBangdev from "./src/assets/sertif-bangdev.png";
+import sertifBugBounty from "./src/assets/sertif-bug-bounty.jpg";
+import sertifDigitalent from "./src/assets/Sertif-digitalent.jpg";
+import sertifMSIB from "./src/assets/sertif-msib.jpg";
+import sertifPelcode from "./src/assets/SERTIF-PELCODE.jpg";
+import sertifProgateHTMLCSS from "./src/assets/Sertif-progate-HTML&CSS.jpg";
+import sertifProgateJS from "./src/assets/sertif-progate-JavaScript.jpg";
+import sertifWebinarCyber from "./src/assets/Sertif-Webinar-Cyber-Security.jpg";
+import sertifWebinarReact from "./src/assets/sertif-webinar-react.jpg";
+import sertifProgateCMD from "./src/assets/SETIF_COMMANDLINE_PROGATE.jpg";
 
 export {
   imgHero,
@@ -42,4 +54,16 @@ export {
   imgWarlab,
   imgPelcode,
   imgLeadFrontend,
+  sertifProgateGit,
+  sertifProgateReact,
+  sertifBangdev,
+  sertifBugBounty,
+  sertifDigitalent,
+  sertifMSIB,
+  sertifPelcode,
+  sertifProgateHTMLCSS,
+  sertifProgateJS,
+  sertifWebinarCyber,
+  sertifWebinarReact,
+  sertifProgateCMD,
 };
