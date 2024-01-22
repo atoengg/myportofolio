@@ -147,10 +147,10 @@ const Certificate = () => {
       <Layouts>
         <section className="py-20">
           <div className="container">
-            <h4 className="font-bold uppercase text-[#030712] text-xl mb-5">
+            <h4 className="font-bold uppercase text-[#030712] text-2xl mb-5">
               {">_ My Certificate"}
             </h4>
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               {!loading ? (
                 displayedCertificates.map((item, index) => (
                   <CardCertif key={index} {...item} />

@@ -19,7 +19,7 @@ const AboutMe = () => {
       <Layouts>
         <div className="py-20">
           <section className="container">
-            <h4 className="font-bold uppercase text-[#030712] text-xl mb-3">
+            <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
               {">_ About Me"}
             </h4>
             <div className="flex flex-wrap items-center gap-8 lg:gap-0">
@@ -86,7 +86,7 @@ const AboutMe = () => {
 
           <section className="container my-10">
             <div className="text-center">
-              <h4 className="font-bold uppercase text-[#030712] text-xl mb-3">
+              <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
                 {">_ My Skills"}
               </h4>
               <p className="text-[#030712] text-sm">
@@ -133,7 +133,7 @@ const AboutMe = () => {
 
           <section className="container my-10">
             <div className="text-center">
-              <h4 className="font-bold uppercase text-[#030712] text-xl mb-3">
+              <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
                 {">_ My Experience"}
               </h4>
               <p className="text-[#030712] text-sm">

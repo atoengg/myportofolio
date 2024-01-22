@@ -19,7 +19,7 @@ const CardCertif = ({
             {title}
             {type ? <div className="badge badge-secondary">NEW</div> : null}
           </h2>
-          <p className="text-justify">{description}</p>
+          <p className="lg:text-justify">{description}</p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">{catagory1}</div>
             <div className="badge badge-outline">{catagory2}</div>
