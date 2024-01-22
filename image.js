@@ -31,6 +31,8 @@ import sertifProgateJS from "./src/assets/sertif-progate-JavaScript.jpg";
 import sertifWebinarCyber from "./src/assets/Sertif-Webinar-Cyber-Security.jpg";
 import sertifWebinarReact from "./src/assets/sertif-webinar-react.jpg";
 import sertifProgateCMD from "./src/assets/SETIF_COMMANDLINE_PROGATE.jpg";
+import bannerEmpathiCare from "./src/assets/banner-empathicare.jpeg";
+import bannerHolaaDelivery from "./src/assets/banner-holladelivery.png";
 
 export {
   imgHero,
@@ -66,4 +68,6 @@ export {
   sertifWebinarCyber,
   sertifWebinarReact,
   sertifProgateCMD,
+  bannerEmpathiCare,
+  bannerHolaaDelivery,
 };
