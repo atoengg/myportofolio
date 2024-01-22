@@ -1,6 +1,13 @@
 import React from "react";
 
-const CardCertif = ({ img, title, description, catagory1, catagory2 }) => {
+const CardCertif = ({
+  img,
+  title,
+  description,
+  type,
+  catagory1,
+  catagory2,
+}) => {
   return (
     <>
       <div className="card w-90% bg-base-100 shadow-xl">
@@ -10,7 +17,7 @@ const CardCertif = ({ img, title, description, catagory1, catagory2 }) => {
         <div className="card-body">
           <h2 className="card-title">
             {title}
-            {/* <div className="badge badge-secondary">NEW</div> */}
+            {type ? <div className="badge badge-secondary">NEW</div> : null}
           </h2>
           <p className="text-justify">{description}</p>
           <div className="card-actions justify-end">

@@ -32,6 +32,7 @@ const Certificate = () => {
                 description={
                   "have successfully participated in the Kampus Merdeka MSIB program batch 5 under the auspices of the Kemendikbud at the Alterra Academy partner by studying the frontend field using ReactJS technology for 4.5 months."
                 }
+                type={"NEW"}
                 catagory1={"Studi Independent"}
                 catagory2={"Alterra Academy"}
               />
