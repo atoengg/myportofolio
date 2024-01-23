@@ -33,6 +33,8 @@ import sertifWebinarReact from "./src/assets/sertif-webinar-react.jpg";
 import sertifProgateCMD from "./src/assets/SETIF_COMMANDLINE_PROGATE.jpg";
 import bannerEmpathiCare from "./src/assets/banner-empathicare.jpeg";
 import bannerHolaaDelivery from "./src/assets/banner-holladelivery.png";
+import bannerAppTourSby from "./src/assets/banner-apptoursby.jpeg";
+import bannerUtmClean from "./src/assets/banner-utmclean.png";
 
 export {
   imgHero,
@@ -70,4 +72,6 @@ export {
   sertifProgateCMD,
   bannerEmpathiCare,
   bannerHolaaDelivery,
+  bannerAppTourSby,
+  bannerUtmClean,
 };

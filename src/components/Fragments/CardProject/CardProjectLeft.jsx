@@ -1,15 +1,14 @@
 import React from "react";
-import CatagoryTech from "../../Elements/CatagoryTech/CatagoryTech";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const CardProject = ({
+const CardProjectLeft = ({
   img,
   title,
   description,
   linkGit,
   linkWeb,
-  catagory,
+  children,
 }) => {
   return (
     <>
@@ -21,18 +20,7 @@ const CardProject = ({
           <h2 className="font-semibold text-xl text-[#111827] mb-3">{title}</h2>
           <p className="text-base text-[#4B5563] mb-6">{description}</p>
 
-          <div className="grid grid-cols-4 gap-4">
-            <CatagoryTech title={catagory} />
-            <CatagoryTech title={"Bootstrap"} />
-            <CatagoryTech title={"Golang"} />
-            <CatagoryTech title={"Flutter"} />
-            <CatagoryTech title={"Figma"} />
-            <CatagoryTech title={"API"} />
-            <CatagoryTech title={"Postman"} />
-            <CatagoryTech title={"GIT"} />
-            <CatagoryTech title={"Github"} />
-            <CatagoryTech title={"TeamWork"} />
-          </div>
+          <div className="grid grid-cols-4 gap-4">{children}</div>
 
           <div className="mt-5 flex flex-row gap-4">
             <Link to={linkGit}>
@@ -48,4 +36,4 @@ const CardProject = ({
   );
 };
 
-export default CardProject;
+export default CardProjectLeft;
