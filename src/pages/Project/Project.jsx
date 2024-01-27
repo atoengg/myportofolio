@@ -36,7 +36,7 @@ const Project = () => {
       <Layouts>
         <section className="py-20">
           <div className="container">
-            <div className="text-center">
+            <div className="text-center" data-aos="fade-down">
               <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
                 {">_ My Project"}
               </h4>
@@ -44,7 +44,10 @@ const Project = () => {
                 Some projects I have built:
               </p>
             </div>
-            <div className="flex items-center my-6 justify-center gap-4">
+            <div
+              className="flex items-center my-6 justify-center gap-4"
+              data-aos="fade-down"
+            >
               <button onClick={() => setSelectedCategory("All")}>
                 <div
                   className={`rounded-full py-1 px-4 border border-[#030712] ${
