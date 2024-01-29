@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextArea = ({ value, onChange, name, placeholder, label }) => {
+const TextArea = ({ value, onChange, name, placeholder, label, className }) => {
   return (
     <>
       <div className="relative">
@@ -8,7 +8,7 @@ const TextArea = ({ value, onChange, name, placeholder, label }) => {
           required
           value={value}
           onChange={onChange}
-          className="border border-[#9ca3af] rounded-md peer text-base py-2 px-2 w-full transition duration-200 placeholder-transparent"
+          className={className}
           name={name}
           id={name}
           placeholder={placeholder}

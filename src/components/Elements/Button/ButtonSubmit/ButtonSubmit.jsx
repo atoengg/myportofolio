@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonSubmit = ({ className, name, label }) => {
+const ButtonSubmit = ({ className, name, label, disabled }) => {
   return (
     <>
       <button
@@ -8,6 +8,7 @@ const ButtonSubmit = ({ className, name, label }) => {
         className={className ? className : "btn"}
         name={name}
         id={name}
+        disabled={disabled}
       >
         {label}
       </button>
