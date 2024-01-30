@@ -9,22 +9,19 @@ import emailjs from "@emailjs/browser";
 const FormContact = () => {
   const form = useRef();
 
+  const serviceId = import.meta.env.VITE_MY_SERVICE_ID;
+  const templateId = import.meta.env.VITE_MY_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_MY_PUBLIC_KEY;
+
   const submitForm = (e) => {
-    emailjs
-      .sendForm(
-        "service_8jokm9r",
-        "template_ko00fbe",
-        form.current,
-        "i4nIZVBY9IpbM8-wJ"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   const formik = useFormik({
