@@ -165,7 +165,7 @@ const AboutMe = () => {
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block lg:max-w-3xl lg:max-h-[95%] object-contain rounded-md"
               />
               <button
-                className="absolute top-2 right-2 text-white active:text-[#030712]"
+                className="absolute top-2 right-2 text-white active:text-[#030712] hover:bg-[#9ca3af] rounded-md"
                 onClick={() => setSelectedImage(null)}
               >
                 <BsX size={40} />
