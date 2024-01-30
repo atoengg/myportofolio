@@ -27,7 +27,7 @@ const Home = () => {
                 />
               </div>
               <div className="w-full self-center p-4">
-                <h1 className="text-3xl font-bold text-[#030712] md:text-5xl">
+                <h1 className="text-3xl font-bold md:text-5xl ">
                   Hi, I'm {typeAnimation} <Cursor cursorStyle="|" />
                 </h1>
                 <p className="py-6 text-base leading-normal text-justify lg:text-left">
@@ -43,7 +43,7 @@ const Home = () => {
                   href={resume}
                   download={"CV_Mohammad Irham alkarim.pdf"}
                   className={
-                    "btn px-8 py-3 items-center text-base font-semibold text-white bg-info-content rounded-full hover:shadow-lg hover:transition hover:duration-200 hover:ease-in-out"
+                    "btn px-8 py-3 items-center text-base font-semibold  rounded-full hover:shadow-lg hover:transition hover:duration-200 hover:ease-in-out"
                   }
                   icon={<BsFileEarmarkArrowDownFill size={20} />}
                 />

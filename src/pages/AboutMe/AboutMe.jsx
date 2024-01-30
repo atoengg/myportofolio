@@ -19,7 +19,7 @@ const AboutMe = () => {
       <Layouts>
         <div className="py-20">
           <section className="container">
-            <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
+            <h4 className="font-bold uppercase text-2xl mb-3">
               {">_ About Me"}
             </h4>
             <div className="flex flex-wrap items-center gap-8 lg:gap-0">
@@ -86,17 +86,17 @@ const AboutMe = () => {
 
           <section className="container my-10">
             <div className="text-center">
-              <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
+              <h4 className="font-bold uppercase text-2xl mb-3">
                 {">_ My Skills"}
               </h4>
-              <p className="text-[#030712] text-sm">
+              <p className="text-sm">
                 The skills, tools and technologies I am really good at:
               </p>
 
               <Marquee autoFill pauseOnClick>
                 {dataSkills?.slice(0, 7).map((item, index) => (
                   <div
-                    className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer text-[#030712]"
+                    className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer "
                     key={index}
                   >
                     <div className="flex items-center justify-center gap-2">
@@ -114,7 +114,7 @@ const AboutMe = () => {
               <Marquee autoFill pauseOnClick direction="right">
                 {dataSkills?.slice(7, 14).map((item, index) => (
                   <div
-                    className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer text-[#030712]"
+                    className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer "
                     key={index}
                   >
                     <div className="flex items-center justify-center gap-2">
@@ -133,10 +133,10 @@ const AboutMe = () => {
 
           <section className="container my-10">
             <div className="text-center">
-              <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
+              <h4 className="font-bold uppercase text-2xl mb-3">
                 {">_ My Experience"}
               </h4>
-              <p className="text-[#030712] text-sm">
+              <p className="text-sm">
                 Here is a quick summary of my most recent experiences:
               </p>
             </div>

@@ -37,12 +37,10 @@ const Contact = () => {
               }}
             />
             <div className="text-center">
-              <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
+              <h4 className="font-bold uppercase text-2xl mb-3">
                 {">_ Contact Me"}
               </h4>
-              <p className="text-[#030712] text-sm">
-                Don't be Shy, to get in touch with me:
-              </p>
+              <p className="text-sm">Don't be Shy, to get in touch with me:</p>
             </div>
 
             <div className="flex flex-wrap items-center mt-10 ">

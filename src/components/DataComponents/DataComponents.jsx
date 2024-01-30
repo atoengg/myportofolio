@@ -116,11 +116,11 @@ export const dataExperience = [
             />
           </svg>
         </div>
-        <div className="timeline-start mb-10 bg-white rounded-md shadow-md p-4">
+        <div className="timeline-start mb-10 rounded-md shadow-md p-4">
           <div className="md:text-end">
             <time className="font-mono italic">Nov 2023 - Dec 2023</time>
           </div>
-          <div className="flex flex-col text-lg text-[#030712] font-bold md:text-end">
+          <div className="flex flex-col text-lg font-bold md:text-end">
             Team Lead Frontend{" "}
             <span className="text-xs font-normal text-[#4b5563] italic">
               Capstone Project ~ Alterra Academy
@@ -177,10 +177,10 @@ export const dataExperience = [
             />
           </svg>
         </div>
-        <div className="timeline-end mb-10 bg-white rounded-md shadow-md p-4 ">
+        <div className="timeline-end mb-10 rounded-md shadow-md p-4 ">
           <time className="font-mono italic">Sep 2022</time>
 
-          <div className="flex flex-col text-lg text-[#030712] font-bold">
+          <div className="flex flex-col text-lg font-bold">
             Coding Training{" "}
             <span className="text-xs font-normal text-[#4b5563] italic ">
               Speaker ~ Trunojoyo Madura University
@@ -233,11 +233,11 @@ export const dataExperience = [
             />
           </svg>
         </div>
-        <div className="timeline-start mb-10 bg-white rounded-md shadow-md p-4">
+        <div className="timeline-start mb-10 rounded-md shadow-md p-4">
           <div className="md:text-end">
             <time className="font-mono italic">Mar 2022 - present</time>
           </div>
-          <div className="flex flex-col text-lg text-[#030712] font-bold md:text-end">
+          <div className="flex flex-col text-lg font-bold md:text-end">
             Laboratory Assistant{" "}
             <span className="text-xs font-normal text-[#4b5563] italic ">
               Warga Lab ~ Trunojoyo Madura University
@@ -287,10 +287,10 @@ export const dataExperience = [
             />
           </svg>
         </div>
-        <div className="timeline-end mb-10 bg-white rounded-md shadow-md p-4">
+        <div className="timeline-end mb-10 rounded-md shadow-md p-4">
           <time className="font-mono italic ">Jan 2021 - Feb 2021</time>
 
-          <div className="text-lg text-[#030712] font-bold flex flex-col ">
+          <div className="text-lg font-bold flex flex-col ">
             IT Team{" "}
             <span className="text-xs font-normal text-[#4b5563] italic ">
               Campus Expo ~ MAN 1 GRESIK

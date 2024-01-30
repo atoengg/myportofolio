@@ -37,12 +37,10 @@ const Project = () => {
         <section className="py-20">
           <div className="container">
             <div className="text-center" data-aos="fade-down">
-              <h4 className="font-bold uppercase text-[#030712] text-2xl mb-3">
+              <h4 className="font-bold uppercase text-2xl mb-3">
                 {">_ My Project"}
               </h4>
-              <p className="text-[#030712] text-sm">
-                Some projects I have built:
-              </p>
+              <p className="text-sm">Some projects I have built:</p>
             </div>
             <div
               className="flex items-center my-6 justify-center gap-4"
@@ -53,7 +51,7 @@ const Project = () => {
                   className={`rounded-full py-1 px-4 border border-[#030712] ${
                     selectedCategory === "All"
                       ? "text-white bg-[#030712]"
-                      : "text-[#030712] bg-transparent"
+                      : " bg-transparent"
                   } transition duration-300 ease-in-out hover:bg-[#030712] hover:text-white `}
                 >
                   <p>All</p>
@@ -64,7 +62,7 @@ const Project = () => {
                   className={`flex justify-center items-center rounded-full py-1 px-4 border border-[#030712] ${
                     selectedCategory === "Web"
                       ? "text-white bg-[#030712]"
-                      : "text-[#030712] bg-transparent"
+                      : " bg-transparent"
                   }  transition duration-300 ease-in-out hover:bg-[#030712] hover:text-white`}
                 >
                   <BsGlobe />
@@ -76,7 +74,7 @@ const Project = () => {
                   className={`flex justify-center items-center rounded-full py-1 px-4 border border-[#030712] ${
                     selectedCategory === "Android"
                       ? "text-white bg-[#030712]"
-                      : "text-[#030712] bg-transparent"
+                      : " bg-transparent"
                   }  transition duration-300 ease-in-out hover:bg-[#030712] hover:text-white`}
                 >
                   <BsPhoneFill />

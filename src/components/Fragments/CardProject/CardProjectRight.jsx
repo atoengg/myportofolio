@@ -24,12 +24,12 @@ const CardProjectRight = ({
         className="flex flex-col lg:flex-row-reverse shadow-md rounded-md my-6"
         data-aos="fade-up"
       >
-        <div className="lg:w-1/2 bg-[#F9FAFB] p-4 lg:p-8">
+        <div className="lg:w-1/2  p-4 lg:p-8">
           <img src={img} alt={img} className="rounded-md shadow-md" />
         </div>
         <div className="lg:w-1/2 p-4 lg:p-8">
-          <h2 className="font-semibold text-xl text-[#111827] mb-3">{title}</h2>
-          <p className="text-base text-[#4B5563] mb-6">{description}</p>
+          <h2 className="font-semibold text-xl mb-3">{title}</h2>
+          <p className="text-base mb-6">{description}</p>
 
           <div className="grid grid-cols-3 lg:grid-cols-4 gap-4">
             {children}
