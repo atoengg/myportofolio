@@ -1,27 +1,38 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Input from "../../Elements/Input/Input";
 import TextArea from "../../Elements/Input/TextArea";
 import ButtonSubmit from "../../Elements/Button/ButtonSubmit/ButtonSubmit";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import ButtonLoading from "../../Elements/Button/ButtonLoading/ButtonLoading";
 
 const FormContact = () => {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
 
   const serviceId = import.meta.env.VITE_MY_SERVICE_ID;
   const templateId = import.meta.env.VITE_MY_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_MY_PUBLIC_KEY;
 
   const submitForm = (e) => {
-    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    setLoading(true);
+    emailjs
+      .sendForm(serviceId, templateId, form.current, publicKey)
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("message failed to send");
+        }
+      )
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   const formik = useFormik({
@@ -100,16 +111,28 @@ const FormContact = () => {
           </div>
 
           <div className="my-5">
-            <ButtonSubmit
-              label={"Send"}
-              name={"btnSubmit"}
-              className={`w-full btn text-base ${
-                formik.isValid
-                  ? "bg-[#9ca3af] text-white"
-                  : "cursor-not-allowed"
-              } transition duration-300 ease-in-out `}
-              disabled={!formik.isValid}
-            />
+            {loading ? (
+              <ButtonLoading
+                label={"Sending..."}
+                className={`w-full btn text-base ${
+                  formik.isValid
+                    ? "bg-[#9ca3af] text-white"
+                    : "cursor-not-allowed"
+                } transition duration-300 ease-in-out `}
+                disabled={!formik.isValid}
+              />
+            ) : (
+              <ButtonSubmit
+                label={"Send"}
+                name={"btnSubmit"}
+                className={`w-full btn text-base ${
+                  formik.isValid
+                    ? "bg-[#9ca3af] text-white"
+                    : "cursor-not-allowed"
+                } transition duration-300 ease-in-out `}
+                disabled={!formik.isValid}
+              />
+            )}
           </div>
         </div>
       </form>
