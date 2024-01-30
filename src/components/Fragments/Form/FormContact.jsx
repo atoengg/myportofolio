@@ -1,30 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
 import Input from "../../Elements/Input/Input";
 import TextArea from "../../Elements/Input/TextArea";
 import ButtonSubmit from "../../Elements/Button/ButtonSubmit/ButtonSubmit";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import emailjs from "@emailjs/browser";
 
 const FormContact = () => {
-  const submitForm = () => {
-    console.log(formik.values.firstName);
-    console.log(formik.values.lastName);
-    console.log(formik.values.email);
-    console.log(formik.values.message);
+  const form = useRef();
+
+  const submitForm = (e) => {
+    emailjs
+      .sendForm(
+        "service_8jokm9r",
+        "template_ko00fbe",
+        form.current,
+        "i4nIZVBY9IpbM8-wJ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
+      fullName: "",
       email: "",
       message: "",
     },
 
     onSubmit: submitForm,
     validationSchema: yup.object().shape({
-      firstName: yup.string().required().min(3).max(10),
-      lastName: yup.string().required().min(3).max(10),
+      fullName: yup.string().required().min(3).max(50),
       email: yup.string().required().email(),
       message: yup.string().required(),
     }),
@@ -38,41 +50,25 @@ const FormContact = () => {
 
   return (
     <>
-      <form action="" onSubmit={formik.handleSubmit}>
+      <form action="" ref={form} onSubmit={formik.handleSubmit}>
         <div className="shadow-md p-8 rounded-md">
           <div className="my-5">
             <Input
-              label={"First Name"}
-              placeholder={"First Name"}
-              name={"firstName"}
+              label={"Full Name"}
+              placeholder={"Full Name"}
+              name={"fullName"}
               onChange={handleInputChange}
               className={`border border-[#9ca3af] ${
-                formik.errors.firstName ? "input-error" : "input-success"
+                formik.errors.fullName ? "input-error" : "input-success"
               } rounded-md peer text-base py-2 px-2 w-full transition duration-200 placeholder-transparent `}
             />
-            {formik.errors.firstName && (
+            {formik.errors.fullName && (
               <div className="text-red-500 text-sm">
-                {formik.errors.firstName}
+                {formik.errors.fullName}
               </div>
             )}
           </div>
 
-          <div className="my-5">
-            <Input
-              label={"Last Name"}
-              placeholder={"Last Name"}
-              name={"lastName"}
-              onChange={handleInputChange}
-              className={`border border-[#9ca3af] ${
-                formik.errors.lastName ? "input-error" : "input-success"
-              } rounded-md peer text-base py-2 px-2 w-full transition duration-200 placeholder-transparent`}
-            />
-            {formik.errors.lastName && (
-              <div className="text-red-500 text-sm">
-                {formik.errors.lastName}
-              </div>
-            )}
-          </div>
           <div className="my-5">
             <Input
               label={"Email"}
