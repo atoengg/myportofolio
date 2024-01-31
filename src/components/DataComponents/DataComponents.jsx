@@ -372,7 +372,7 @@ export const dataProjects = [
     description:
       "AppTourSurabaya merupakan aplikasi berbasis Android yang berisi informasi dan informasi objek wisata Lokasi objek wisata ini berada di kota Surabaya yang dilengkapi dengan fasilitas lengkap dengan gambar. Diharapkan aplikasi ini dapat menjadi panduan bagi pengguna dalam mencari lokasi terkait pariwisata di kota surabaya.",
     linkGit: "https://github.com/atoengg/AppTourSurabaya",
-    linkWeb: "https://holaa-delivery.vercel.app/",
+    linkWeb: "/",
     categories: ["Kotlin", "Firebase", "TeamWork", "Github", "GIT", "Android"],
   },
   {
