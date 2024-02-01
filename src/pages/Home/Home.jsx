@@ -5,8 +5,11 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import ButtonLink from "../../components/Elements/Button/ButtonLink/ButtonLink";
 import resume from "../../assets/pdf/CV_Mohammad Irham alkarim.pdf";
 import { BsDownload, BsFileEarmarkArrowDownFill } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
+
   const [typeAnimation] = useTypewriter({
     words: ["Atoengg🙌", "Student", "FrontEnd Dev"],
     loop: {},
@@ -28,15 +31,10 @@ const Home = () => {
               </div>
               <div className="w-full self-center p-4">
                 <h1 className="text-3xl font-bold md:text-5xl ">
-                  Hi, I'm {typeAnimation} <Cursor cursorStyle="|" />
+                  {t("greeting")} {typeAnimation} <Cursor cursorStyle="|" />
                 </h1>
                 <p className="py-6 text-base leading-normal text-justify lg:text-left">
-                  I am a information systems student at Trunojoyo University.
-                  I've honed my skills in HTML, CSS, and JavaScript, and I've
-                  learned advanced JavaScript frameworks like React.js to create
-                  dynamic web applications. I am committed to staying up to date
-                  with the latest technology developments to continue pushing
-                  the boundaries of web development.
+                  {t("introduction")}
                 </p>
                 <ButtonLink
                   text={"Download CV"}

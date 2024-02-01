@@ -1,14 +1,27 @@
 import React, { useState } from "react";
 import Layouts from "../../layouts/Layouts";
-import { gif, mee } from "../../../image";
+import {
+  gif,
+  imgLeadFrontend,
+  imgPelcode,
+  imgTeamIT,
+  imgWarlab,
+  mee,
+} from "../../../image";
 import Marquee from "react-fast-marquee";
 import { BsX } from "react-icons/bs";
 import {
   dataExperience,
   dataSkills,
 } from "../../components/DataComponents/DataComponents";
+import { useTranslation } from "react-i18next";
+import CardExperienceLeft from "../../components/Fragments/CardExperience/CardExperienceLeft";
+import ListDescExperience from "../../components/Elements/ListDescExperience/ListDescExperience";
+import CardExperienceRight from "../../components/Fragments/CardExperience/CardExperienceRight";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
+
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (image) => {
@@ -20,7 +33,7 @@ const AboutMe = () => {
         <div className="py-20">
           <section className="container">
             <h4 className="font-bold uppercase text-2xl mb-3">
-              {">_ About Me"}
+              {t("aboutme")}
             </h4>
             <div className="flex flex-wrap items-center gap-8 lg:gap-0">
               <div className="w-full mb-6 lg:w-6/12 lg:mb-0">
@@ -42,42 +55,23 @@ const AboutMe = () => {
               </div>
               <div className="w-full lg:w-5/12 ">
                 <h3 className="font-semibold mb-3 text-lg lg:text-xl">
-                  Hai Kidss🖖, who am i?
+                  {t("titleDescription")}
                 </h3>
                 <div>
                   <p className="text-sm leading-relaxed">
-                    perkenalkan saya Mohammad Irham Al Karim dibesarkan oleh
-                    Ayah dan Ibu di kota Gresik. Yapss, saya kelahiran tahun
-                    2002 dari 1 saudara. Saya suka dunia IT mulai dari kelas 2
-                    MTS/SMP, waktu itu iseng baca artikel tentang hacker dan
-                    dari situ mulai mengenal istilah bahasa pemrogaman. Semenjak
-                    kejadian itu saya pun tertarik untuk mendalami dunia IT.
+                    {t("descriptionMe1")}
                   </p>
 
                   <p className="text-sm leading-relaxed my-2">
-                    sebelum saya memiliki minat di dunia IT khususnya software
-                    engineering, saya mempunyai hobi yang masih saya lakukan
-                    sampai sekarang seperti bermain voli, hiking, dan camping.
+                    {t("descriptionMe2")}
                   </p>
 
                   <p className="text-sm leading-relaxed my-2">
-                    pertama kali saya belajar bahasa pemrogaman dimulai saat
-                    saya duduk di bangku SMA tepatnya kelas 12, dengan
-                    bermodalkan menonton vidio tutorial youtube. Pada waktu itu
-                    saya sempat mengalami kesulitan dalam mempelajari bahasa
-                    pemrogaman. Bahkan saat kuliah kemampuan akademik saya bisa
-                    di bilang biasa-biasa saja.
+                    {t("descriptionMe3")}
                   </p>
 
                   <p className="text-sm leading-relaxed mt-2">
-                    tepatnya pada semester 7, saya mengikuti program dari
-                    kemendikbud yakni kampus merdeka studi independent di mitra
-                    alterra academy. Saya berfokus menekuni bidang front end
-                    dengan menggunakan tech stack react js, yang saat itu tidak
-                    banyak yang saya ketahui soal tech stack react js. Namun,
-                    berkat didikan dari mentor dan usaha keras saya dalam
-                    belajar, saya pun akhirnya mampu membuat aplikasi web dengan
-                    menggunakan tech stack react js.
+                    {t("descriptionMe4")}
                   </p>
                 </div>
               </div>
@@ -87,11 +81,9 @@ const AboutMe = () => {
           <section className="container my-10">
             <div className="text-center">
               <h4 className="font-bold uppercase text-2xl mb-3">
-                {">_ My Skills"}
+                {t("mySkills")}
               </h4>
-              <p className="text-sm">
-                The skills, tools and technologies I am really good at:
-              </p>
+              <p className="text-sm">{t("subtitleMySkills")}</p>
 
               <Marquee autoFill pauseOnClick>
                 {dataSkills?.slice(0, 7).map((item, index) => (
@@ -134,26 +126,76 @@ const AboutMe = () => {
           <section className="container my-10">
             <div className="text-center">
               <h4 className="font-bold uppercase text-2xl mb-3">
-                {">_ My Experience"}
+                {t("myExperience")}
               </h4>
-              <p className="text-sm">
-                Here is a quick summary of my most recent experiences:
-              </p>
+              <p className="text-sm">{t("subtitleMyExperience")}</p>
             </div>
 
             <div className="mt-8">
-              {dataExperience?.map((item, index) => (
-                <ul
-                  className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
-                  key={index}
-                >
-                  <li onClick={() => handleImageClick(item.image)}>
-                    <hr />
-                    {item.content}
-                    <hr />
-                  </li>
-                </ul>
-              ))}
+              <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                <li>
+                  <hr />
+                  <CardExperienceLeft
+                    time={"Nov 2023 - Dec 2023"}
+                    title={t("experience1")}
+                    subTitle={"Capstone Project ~ Alterra Academy"}
+                    img={imgLeadFrontend}
+                    onClick={() => handleImageClick(imgLeadFrontend)}
+                  >
+                    <ListDescExperience description={t("descExpLead1")} />
+                    <ListDescExperience description={t("descExpLead2")} />
+                    <ListDescExperience description={t("descExpLead3")} />
+                    <ListDescExperience description={t("descExpLead4")} />
+                    <ListDescExperience description={t("descExpLead5")} />
+                  </CardExperienceLeft>
+                  <hr />
+                </li>
+                <li>
+                  <hr />
+                  <CardExperienceRight
+                    title={t("experience2")}
+                    subTitle={"Speaker ~ Trunojoyo Madura University"}
+                    time={"Sep 2022"}
+                    img={imgPelcode}
+                    onClick={() => handleImageClick(imgPelcode)}
+                  >
+                    <ListDescExperience description={t("descExpPelcode1")} />
+                    <ListDescExperience description={t("descExpPelcode2")} />
+                    <ListDescExperience description={t("descExpPelcode3")} />
+                  </CardExperienceRight>
+                  <hr />
+                </li>
+                <li>
+                  <hr />
+                  <CardExperienceLeft
+                    time={"Mar 2022 - present"}
+                    title={t("experience3")}
+                    subTitle={"Warga Lab ~ Trunojoyo Madura University"}
+                    img={imgWarlab}
+                    onClick={() => handleImageClick(imgWarlab)}
+                  >
+                    <ListDescExperience description={t("descExpLab1")} />
+                    <ListDescExperience description={t("descExpLab2")} />
+                    <ListDescExperience description={t("descExpLab3")} />
+                    <ListDescExperience description={t("descExpLab4")} />
+                  </CardExperienceLeft>
+                  <hr />
+                </li>
+                <li>
+                  <hr />
+                  <CardExperienceRight
+                    title={t("experience4")}
+                    subTitle={"Campus Expo ~ MAN 1 GRESIK"}
+                    time={"Jan 2021 - Feb 2021"}
+                    img={imgTeamIT}
+                    onClick={() => handleImageClick(imgTeamIT)}
+                  >
+                    <ListDescExperience description={t("descExpIt1")} />
+                    <ListDescExperience description={t("descExpIt2")} />
+                  </CardExperienceRight>
+                  <hr />
+                </li>
+              </ul>
             </div>
           </section>
 

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   bannerAppTourSby,
   bannerEmpathiCare,
@@ -121,7 +122,7 @@ export const dataExperience = [
             <time className="font-mono italic">Nov 2023 - Dec 2023</time>
           </div>
           <div className="flex flex-col text-lg font-bold md:text-end">
-            Team Lead Frontend{" "}
+            Team Lead Frontend
             <span className="text-xs font-normal text-[#4b5563] italic">
               Capstone Project ~ Alterra Academy
             </span>
@@ -256,7 +257,7 @@ export const dataExperience = [
                 deliver material in practicum in accordance with the module.
               </li>
               <li className="list-disc">Delivering projects to practice.</li>
-              <li className="list-disc">Providing guidance and support .</li>
+              <li className="list-disc">Providing guidance and support.</li>
               <li className="list-disc">
                 Administrative tasks: Administrative duties may be assigned to
                 the assistant, such as managing inventory, ordering supplies, or
