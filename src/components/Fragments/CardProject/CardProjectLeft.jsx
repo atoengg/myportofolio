@@ -22,7 +22,7 @@ const CardProjectLeft = ({
   return (
     <>
       <div
-        className="flex flex-col shadow-md rounded-md my-6 lg:flex-row"
+        className="flex flex-col shadow-xl rounded-md my-6 lg:flex-row"
         data-aos="fade-up"
       >
         <div className="lg:w-1/2 p-4 lg:p-8">

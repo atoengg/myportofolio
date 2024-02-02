@@ -10,10 +10,7 @@ import {
 } from "../../../image";
 import Marquee from "react-fast-marquee";
 import { BsX } from "react-icons/bs";
-import {
-  dataExperience,
-  dataSkills,
-} from "../../components/DataComponents/DataComponents";
+import { dataSkills } from "../../components/DataComponents/DataComponents";
 import { useTranslation } from "react-i18next";
 import CardExperienceLeft from "../../components/Fragments/CardExperience/CardExperienceLeft";
 import ListDescExperience from "../../components/Elements/ListDescExperience/ListDescExperience";

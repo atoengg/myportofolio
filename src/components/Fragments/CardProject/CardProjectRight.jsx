@@ -21,7 +21,7 @@ const CardProjectRight = ({
   return (
     <>
       <div
-        className="flex flex-col lg:flex-row-reverse shadow-md rounded-md my-6"
+        className="flex flex-col lg:flex-row-reverse shadow-xl rounded-md my-6"
         data-aos="fade-up"
       >
         <div className="lg:w-1/2  p-4 lg:p-8">
