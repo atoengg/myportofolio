@@ -56,6 +56,30 @@ i18next
           descExpIt1: "technical preparation and setup.",
           descExpIt2:
             "creation and maintenance of digital materials: such as multimedia presentations, promotional vidios, and promotional materials to be displayed on screens or monitors.",
+          descCertif1:
+            "have successfully participated in the Kampus Merdeka MSIB program batch 5 under the auspices of the Kemendikbud at the Alterra Academy partner by studying the frontend field using ReactJS technology for 4.5 months.",
+          descCertif2:
+            "Become a participant in the UI/UX Design & Web Class Bootcamp organized by the Bangkalan Dev Community for 2 days online.",
+          descCertif3:
+            "have successfully completed the intro to front-end dev training held by Kominfo in collaboration with Progate partners for 1 month.",
+          descCertif4:
+            'Become a participant in a webinar with the theme "Switching Your Career? Level Up Yourself as a React Js Developer" held by Edspert.id for 2 days. The webinar mostly discusses how to develop website applications using React JS.',
+          descCertif5:
+            'became a speaker at a coding training event organized by Himasi with the theme "Hone Skills in Progamming Using Python" during 2 offline meetings.',
+          descCertif6:
+            "Become a participant in a webinar held by Merdeka Siber with a series of bug hunter journeys and bug hunting tips.",
+          descCertif7:
+            'became a participant in a webinar held by Himasis Polytechnic STMI Jakarta with the theme "Pentingnya Menjaga Keamanan Data Pribadi di Era Digital',
+          descCertif8:
+            "successfully completed the HTML & CSS course with 4 studies and 3 exercises on the Progate page, the course covers HTML & CSS fundamentals.",
+          descCertif9:
+            "successfully completed the Javascript course with 7 studies on the Progate page, the course covers Javascript fundamentals for web development.",
+          descCertif10:
+            "successfully completed the Command Line course with 1 studies on the Progate page, the course covers Command Line fundamentals.",
+          descCertif11:
+            "successfully completed the GIT course with 1 studies on the Progate page, the course covers GIT fundamentals.",
+          descCertif12:
+            "successfully completed the React course with 4 studies on the Progate page, the course covers React fundamentals for front-end web development.",
         },
       },
       ina: {
@@ -106,6 +130,30 @@ i18next
           descExpIt1: "persiapan dan pengaturan teknis.",
           descExpIt2:
             "pembuatan dan pemeliharaan materi digital: seperti presentasi multimedia, video promosi, dan materi promosi untuk ditampilkan di layar atau monitor.",
+          descCertif1:
+            "telah sukses mengikuti program MSIB Kampus Merdeka angkatan 5 dibawah naungan Kemendikbud mitra Alterra Academy dengan mempelajari bidang frontend menggunakan teknologi ReactJS selama 4,5 bulan.",
+          descCertif2:
+            "Menjadi peserta UI/UX Design & Web Class Bootcamp yang diselenggarakan oleh Komunitas Dev Bangkalan selama 2 hari secara online.",
+          descCertif3:
+            "telah berhasil menyelesaikan pelatihan intro to front-end dev yang diselenggarakan Kominfo bekerjasama dengan mitra Progate selama 1 bulan.",
+          descCertif4:
+            'Menjadi peserta webinar bertema "Switching Your Career? Level Up Yourself as a React Js Developer" yang diadakan oleh Edspert.id selama 2 hari. Webinar tersebut banyak membahas tentang cara mengembangkan aplikasi website menggunakan React JS.',
+          descCertif5:
+            "menjadi pembicara pada acara pelatihan coding yang diselenggarakan oleh Himasi dengan tema “Mengasah Keterampilan Pemrograman Menggunakan Python” selama 2 kali pertemuan offline.",
+          descCertif6:
+            "Jadilah peserta webinar yang diadakan Merdeka Siber dengan rangkaian perjalanan bug hunter dan tips berburu bug.",
+          descCertif7:
+            'menjadi peserta webinar yang diadakan oleh Himasis Politeknik STMI Jakarta dengan tema "Pentingnya Menjaga Keamanan Data Pribadi di Era Digital',
+          descCertif8:
+            "berhasil menyelesaikan kursus HTML & CSS dengan 4 pelajaran dan 3 latihan di halaman Progate, kursus tersebut mencakup dasar-dasar HTML & CSS.",
+          descCertif9:
+            "berhasil menyelesaikan kursus Javascript dengan 7 studi di halaman Progate, kursus ini mencakup dasar-dasar Javascript untuk pengembangan web.",
+          descCertif10:
+            "berhasil menyelesaikan kursus Command Line dengan 1 studi di halaman Progate, kursus tersebut mencakup dasar-dasar Command Line.",
+          descCertif11:
+            "berhasil menyelesaikan kursus GIT dengan 1 studi di halaman Progate, kursus tersebut mencakup dasar-dasar GIT.",
+          descCertif12:
+            "berhasil menyelesaikan kursus React dengan 4 studi di halaman Progate, kursus tersebut mencakup dasar-dasar React untuk pengembangan web front-end.",
         },
       },
     },

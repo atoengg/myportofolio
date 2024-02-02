@@ -16,10 +16,13 @@ import {
   sertifWebinarReact,
 } from "../../../image";
 import SkeletonCardCertif from "../../components/Fragments/SkeletonLoading/SkeletonCardCertif";
+import { useTranslation } from "react-i18next";
 
 const Certificate = () => {
   const [loading, setLoading] = useState(true);
   const [displayedCertificates, setDisplayedCertificates] = useState([]);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -43,8 +46,7 @@ const Certificate = () => {
           {
             img: sertifMSIB,
             title: "MSIB BATCH 5",
-            description:
-              "have successfully participated in the Kampus Merdeka MSIB program batch 5 under the auspices of the Kemendikbud at the Alterra Academy partner by studying the frontend field using ReactJS technology for 4.5 months.",
+            description: t("descCertif1"),
             type: "NEW",
             catagory1: "Studi Independent",
             catagory2: "Alterra Academy",
@@ -52,31 +54,27 @@ const Certificate = () => {
           {
             img: sertifBangdev,
             title: "Bootcamp UI/UX Design & Web Class",
-            description:
-              "Become a participant in the UI/UX Design & Web Class Bootcamp organized by the Bangkalan Dev Community for 2 days online.",
+            description: t("descCertif2"),
             catagory1: "BootCamp",
             catagory2: "Bangkalan dev",
           },
           {
             img: sertifDigitalent,
             title: "Intro to Front-end Development",
-            description:
-              "have successfully completed the intro to front-end dev training held by Kominfo in collaboration with Progate partners for 1 month.",
+            description: t("descCertif3"),
             catagory1: "Kominfo",
             catagory2: "Fresh Graduate Academy",
           },
           {
             img: sertifWebinarReact,
             title: "Webinar React JS",
-            description:
-              'Become a participant in a webinar with the theme "Switching Your Career? Level Up Yourself as a React Js Developer" held by Edspert.id for 2 days. The webinar mostly discusses how to develop website applications using React JS.',
+            description: t("descCertif4"),
             catagory1: "Edspert.id",
             catagory2: "React JS",
           },
           {
             img: sertifPelcode,
-            description:
-              'became a speaker at a coding training event organized by Himasi with the theme "Hone Skills in Progamming Using Python" during 2 offline meetings.',
+            description: t("descCertif5"),
             title: "Coding Training",
             catagory1: "Python",
             catagory2: "Himasi UTM",
@@ -84,15 +82,13 @@ const Certificate = () => {
           {
             img: sertifBugBounty,
             title: "Basic Hacking Webinar",
-            description:
-              "Become a participant in a webinar held by Merdeka Siber with a series of bug hunter journeys and bug hunting tips.",
+            description: t("descCertif6"),
             catagory1: "Bug Hunter",
             catagory2: "Merdeka Siber",
           },
           {
             img: sertifWebinarCyber,
-            description:
-              'became a participant in a webinar held by Himasis Polytechnic STMI Jakarta with the theme "Pentingnya Menjaga Keamanan Data Pribadi di Era Digital".',
+            description: t("descCertif7"),
             title: "Webinar Cyber Security",
             catagory1: "Webinar",
             catagory2: "Himasis Poltek STMI Jakarta",
@@ -100,40 +96,35 @@ const Certificate = () => {
           {
             img: sertifProgateHTMLCSS,
             title: "Course HTML & CSS",
-            description:
-              "successfully completed the HTML & CSS course with 4 studies and 3 exercises on the Progate page, the course covers HTML & CSS fundamentals.",
+            description: t("descCertif8"),
             catagory1: "Progate",
             catagory2: "HTML & CSS",
           },
           {
             img: sertifProgateJS,
             title: "Course Javascript",
-            description:
-              "successfully completed the Javascript course with 7 studies on the Progate page, the course covers Javascript fundamentals for web development.",
+            description: t("descCertif9"),
             catagory1: "Progate",
             catagory2: "Javascript",
           },
           {
             img: sertifProgateCMD,
             title: "Course Command Line",
-            description:
-              "successfully completed the Command Line course with 1 studies on the Progate page, the course covers Command Line fundamentals.",
+            description: t("descCertif10"),
             catagory1: "Progate",
             catagory2: "CMD",
           },
           {
             img: sertifProgateGit,
             title: "Course GIT",
-            description:
-              "successfully completed the GIT course with 1 studies on the Progate page, the course covers GIT fundamentals.",
+            description: t("descCertif11"),
             catagory1: "Progate",
             catagory2: "GIT",
           },
           {
             img: sertifProgateReact,
             title: "Course React",
-            description:
-              "successfully completed the React course with 4 studies on the Progate page, the course covers React fundamentals for front-end web development.",
+            description: t("descCertif12"),
             catagory1: "Progate",
             catagory2: "React JS",
           },
