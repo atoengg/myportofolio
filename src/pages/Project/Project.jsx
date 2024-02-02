@@ -6,8 +6,11 @@ import CardProjectLeft from "../../components/Fragments/CardProject/CardProjectL
 import CardProjectRight from "../../components/Fragments/CardProject/CardProjectRight";
 import { dataProjects } from "../../components/DataComponents/DataComponents";
 import AOS from "aos";
+import { useTranslation } from "react-i18next";
 
 const Project = () => {
+  const { t } = useTranslation();
+
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [filteredProjects, setFilteredProjects] = useState([]);
 
@@ -38,9 +41,9 @@ const Project = () => {
           <div className="container">
             <div className="text-center" data-aos="fade-down">
               <h4 className="font-bold uppercase text-2xl mb-3">
-                {">_ My Project"}
+                {t("myProject")}
               </h4>
-              <p className="text-sm">Some projects I have built:</p>
+              <p className="text-sm">{t("subTitleproject")}</p>
             </div>
             <div
               className="flex items-center my-6 justify-center gap-4"

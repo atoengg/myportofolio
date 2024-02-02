@@ -4,8 +4,11 @@ import SocialMedia from "../../components/Elements/SocialMedia/SocialMedia";
 import { BsGithub, BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import FormContact from "../../components/Fragments/Form/FormContact";
 import { Toaster } from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Layouts>
@@ -38,22 +41,15 @@ const Contact = () => {
             />
             <div className="text-center">
               <h4 className="font-bold uppercase text-2xl mb-3">
-                {">_ Contact Me"}
+                {t("contacMe")}
               </h4>
-              <p className="text-sm">Don't be Shy, to get in touch with me:</p>
+              <p className="text-sm">{t("subTitleContact")}</p>
             </div>
 
             <div className="flex flex-wrap items-center mt-10 ">
               <div className="w-full lg:w-6/12">
                 <h2 className="mb-3 font-semibold text-lg">Get In Touch</h2>
-                <p className="mb-3">
-                  {" "}
-                  I'm open to collaboration and eager to discuss how my skills
-                  and experience can contribute to your success. Whether it's a
-                  one-time project or an ongoing partnership, I'm here to
-                  explore and create value together. you can contact me via
-                  email or social media.
-                </p>
+                <p className="mb-3">{t("descContact")}</p>
                 <div className="flex items-center">
                   <SocialMedia location={"https://github.com/atoengg"}>
                     <BsGithub />

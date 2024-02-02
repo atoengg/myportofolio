@@ -80,6 +80,12 @@ i18next
             "successfully completed the GIT course with 1 studies on the Progate page, the course covers GIT fundamentals.",
           descCertif12:
             "successfully completed the React course with 4 studies on the Progate page, the course covers React fundamentals for front-end web development.",
+          myProject: ">_ My Project",
+          subTitleproject: "Some projects I have built:",
+          contacMe: ">_ Contact Me",
+          subTitleContact: "Don't be Shy, to get in touch with me:",
+          descContact:
+            "I'm open to collaboration and eager to discuss how my skills and experience can contribute to your success. Whether it's a one-time project or an ongoing partnership, I'm here to explore and create value together. you can contact me via email or social media.",
         },
       },
       ina: {
@@ -154,6 +160,12 @@ i18next
             "berhasil menyelesaikan kursus GIT dengan 1 studi di halaman Progate, kursus tersebut mencakup dasar-dasar GIT.",
           descCertif12:
             "berhasil menyelesaikan kursus React dengan 4 studi di halaman Progate, kursus tersebut mencakup dasar-dasar React untuk pengembangan web front-end.",
+          myProject: ">_ proyek saya",
+          subTitleproject: "Beberapa proyek yang pernah saya bangun:",
+          contacMe: ">_ Hubungi Saya",
+          subTitleContact: "Jangan Malu, untuk menghubungi saya:",
+          descContact:
+            "Saya terbuka untuk berkolaborasi dan ingin mendiskusikan bagaimana keterampilan dan pengalaman saya dapat berkontribusi pada kesuksesan Anda. Baik itu proyek satu kali atau kemitraan berkelanjutan, saya di sini untuk mengeksplorasi dan menciptakan nilai bersama. Anda dapat menghubungi saya melalui email atau media sosial.",
         },
       },
     },
