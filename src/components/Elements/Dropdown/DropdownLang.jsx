@@ -26,12 +26,6 @@ const DropdownLang = () => {
               <a>{lng.lang}</a>
             </li>
           ))}
-          {/* <li>
-            <a>English</a>
-          </li>
-          <li>
-            <a>Indonesia</a>
-          </li> */}
         </ul>
       </details>
     </>

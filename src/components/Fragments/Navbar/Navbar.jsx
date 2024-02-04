@@ -5,7 +5,6 @@ import {
   BsJournal,
   BsCast,
   BsPersonLinesFill,
-  BsMoonFill,
 } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import DropdownLang from "../../Elements/Dropdown/DropdownLang";
