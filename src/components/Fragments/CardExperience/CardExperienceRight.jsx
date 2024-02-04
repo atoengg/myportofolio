@@ -10,7 +10,6 @@ const CardExperienceRight = ({
 }) => {
   return (
     <>
-      <hr />
       <div className="timeline-middle">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +26,6 @@ const CardExperienceRight = ({
       </div>
       <div className="timeline-end mb-10 rounded-md shadow-md p-4 ">
         <time className="font-mono italic">{time}</time>
-
         <div className="flex flex-col text-lg font-bold">
           {title}
           <span className="text-xs font-normal text-[#4b5563] italic ">
