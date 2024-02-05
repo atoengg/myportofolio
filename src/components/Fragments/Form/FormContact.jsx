@@ -24,6 +24,7 @@ const FormContact = () => {
         (result) => {
           console.log(result.text);
           toast.success("Message sent successfully");
+          formik.resetForm();
         },
         (error) => {
           console.log(error.text);
@@ -32,6 +33,7 @@ const FormContact = () => {
       )
       .finally(() => {
         setLoading(false);
+        formik.resetForm();
       });
   };
 
