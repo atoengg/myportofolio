@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layouts from "../../layouts/Layouts";
 import {
   gif,
@@ -24,6 +24,10 @@ const AboutMe = () => {
   const handleImageClick = (image) => {
     setSelectedImage(image);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Layouts>

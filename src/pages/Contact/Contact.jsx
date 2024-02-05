@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layouts from "../../layouts/Layouts";
 import SocialMedia from "../../components/Elements/SocialMedia/SocialMedia";
 import { BsGithub, BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
@@ -8,6 +8,10 @@ import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

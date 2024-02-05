@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layouts from "../../layouts/Layouts";
 import { imgHero } from "../../../image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import ButtonLink from "../../components/Elements/Button/ButtonLink/ButtonLink";
 import resume from "../../assets/pdf/CV_Mohammad Irham alkarim.pdf";
-import { BsDownload, BsFileEarmarkArrowDownFill } from "react-icons/bs";
+import { BsFileEarmarkArrowDownFill } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
@@ -16,6 +16,10 @@ const Home = () => {
     typeSpeed: 100,
     deleteSpeed: 80,
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
