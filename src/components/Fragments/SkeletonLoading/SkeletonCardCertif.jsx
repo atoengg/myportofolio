@@ -4,7 +4,10 @@ const SkeletonCardCertif = ({ certificate }) => {
   return Array(certificate)
     .fill(0)
     .map((item, index) => (
-      <div className="shadow-xl p-3 flex flex-col gap-4 w-90%" key={index}>
+      <div
+        className="shadow-xl p-3 flex flex-col gap-4 w-90% rounded-xl"
+        key={index}
+      >
         <div className="skeleton h-60 w-full"></div>
         <div className="skeleton h-6 w-28"></div>
         <div className="skeleton h-4 w-full"></div>

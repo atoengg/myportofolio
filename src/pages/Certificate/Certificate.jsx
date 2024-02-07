@@ -39,6 +39,10 @@ const Certificate = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [displayedCertificates]);
+
   const fetchCertificates = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
