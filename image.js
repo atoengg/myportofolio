@@ -36,6 +36,10 @@ import bannerHolaaDelivery from "./src/assets/banner-holladelivery.png";
 import bannerAppTourSby from "./src/assets/banner-apptoursby.jpeg";
 import bannerUtmClean from "./src/assets/banner-utmclean.png";
 import iconBar from "./src/assets/iconBar.jpeg";
+import logoUtm from "./src/assets/logo_utm.png";
+import logoAlterra from "./src/assets/alterra.png";
+import logoDigitalent from "./src/assets/digitalent.png";
+import logoMan from "./src/assets/man.png";
 
 export {
   imgHero,
@@ -76,4 +80,8 @@ export {
   bannerAppTourSby,
   bannerUtmClean,
   iconBar,
+  logoUtm,
+  logoAlterra,
+  logoDigitalent,
+  logoMan,
 };

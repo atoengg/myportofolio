@@ -6,6 +6,10 @@ import {
   imgPelcode,
   imgTeamIT,
   imgWarlab,
+  logoAlterra,
+  logoDigitalent,
+  logoMan,
+  logoUtm,
   mee,
 } from "../../../image";
 import Marquee from "react-fast-marquee";
@@ -15,6 +19,8 @@ import { useTranslation } from "react-i18next";
 import CardExperienceLeft from "../../components/Fragments/CardExperience/CardExperienceLeft";
 import ListDescExperience from "../../components/Elements/ListDescExperience/ListDescExperience";
 import CardExperienceRight from "../../components/Fragments/CardExperience/CardExperienceRight";
+import CardEducation from "../../components/Fragments/CardEducation/CardEducation";
+import ListDescEdu from "../../components/Elements/ListDescEdu/ListDescEdu";
 
 const AboutMe = () => {
   const { t } = useTranslation();
@@ -121,6 +127,87 @@ const AboutMe = () => {
                   </div>
                 ))}
               </Marquee>
+            </div>
+          </section>
+
+          <section className="container my-10">
+            <div className="text-center">
+              <h4 className="font-bold uppercase text-2xl mb-3">
+                {t("educationalBg")}
+              </h4>
+              <p className="text-sm">{t("subtitleEducationBg")}</p>
+            </div>
+
+            <div className="mt-8 ">
+              <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                <li>
+                  <CardEducation
+                    time={"Sep 2020 - Present"}
+                    title={t("titleEdu")}
+                    logo={logoUtm}
+                    study={t("studyEdu")}
+                  >
+                    <ListDescEdu description={t("descEdu1")} />
+                    <ListDescEdu description={t("descEdu2")} />
+                    <ListDescEdu description={t("descEdu3")} />
+                  </CardEducation>
+                  <hr />
+                </li>
+                <li>
+                  <hr />
+                  <CardEducation
+                    time={"Aug 2023 - Dec 2023"}
+                    title={"Alterra Academy"}
+                    logo={logoAlterra}
+                    study={
+                      "2023 Complete Front-End Engineer Career With ReactJS "
+                    }
+                    className={"timeline-start"}
+                    svgColor={"text-primary"}
+                  >
+                    <ListDescEdu description={t("descEduAlta1")} />
+                    <ListDescEdu description={t("descEduAlta2")} />
+                    <ListDescEdu description={t("descEduAlta3")} />
+                    <ListDescEdu description={t("descEduAlta4")} />
+                    <ListDescEdu description={t("descEduAlta5")} />
+                    <ListDescEdu description={t("descEduAlta6")} />
+                    <ListDescEdu description={t("descEduAlta7")} />
+                  </CardEducation>
+                  <hr className="bg-primary" />
+                </li>
+                <li>
+                  <hr className="bg-primary" />
+                  <CardEducation
+                    time={"Mar 2023 - Apr 2023"}
+                    title={"Digitalent Scholarship Kominfo"}
+                    logo={logoDigitalent}
+                    study={"Intro to Front-end Development"}
+                    svgColor={"text-primary"}
+                  >
+                    <ListDescEdu description={t("descEduDigitalent1")} />
+                    <ListDescEdu description={t("descEduDigitalent2")} />
+                    <ListDescEdu description={t("descEduDigitalent3")} />
+                    <ListDescEdu description={t("descEduDigitalent4")} />
+                    <ListDescEdu description={t("descEduDigitalent5")} />
+                  </CardEducation>
+                  <hr className="bg-primary" />
+                </li>
+                <li>
+                  <hr className="bg-primary" />
+                  <CardEducation
+                    time={"Jun 2017 - Feb 2020"}
+                    title={"Man 1 Gresik"}
+                    logo={logoMan}
+                    study={t("studyEduMan")}
+                    className={"timeline-start"}
+                    svgColor={"text-primary"}
+                  >
+                    <ListDescEdu description={t("descEduMan1")} />
+                    <ListDescEdu description={t("descEduMan2")} />
+                  </CardEducation>
+                  <hr className="bg-primary" />
+                </li>
+              </ul>
             </div>
           </section>
 

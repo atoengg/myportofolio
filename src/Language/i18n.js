@@ -86,6 +86,40 @@ i18next
           subTitleContact: "Don't be Shy, to get in touch with me:",
           descContact:
             "I'm open to collaboration and eager to discuss how my skills and experience can contribute to your success. Whether it's a one-time project or an ongoing partnership, I'm here to explore and create value together. you can contact me via email or social media.",
+          educationalBg: ">_ educational background",
+          subtitleEducationBg: "The following is my educational history:",
+          titleEdu: "Trunojoyo University, Madura",
+          studyEdu: "S1, Information System",
+          descEdu1: "Current Activity: Laboratory Assistant.",
+          descEdu2:
+            "Create web projects using HTML, CSS, Javascript, boostrap, tailwind css, php, and React JS.",
+          descEdu3:
+            "Graduated from all compulsory courses and did not retake any courses.",
+          descEduAlta1:
+            "successfully designed and built a technology product as a team, namely the capstone project.",
+          descEduAlta2:
+            "successfully designed and built a technology product individually.",
+          descEduAlta3:
+            "skills and comprehensive understanding of frontend fundamentals and how to implement them.",
+          descEduAlta4:
+            "skills and comprehensive understanding of mastering front end using the react js framework and how to implement it.",
+          descEduAlta5:
+            "do individual daily assignments in the form of quizzes, summaries and practicums.",
+          descEduAlta6: "live sessions with mentors 3 times a week.",
+          descEduAlta7: "GPA 94 out of 100.",
+          descEduDigitalent1:
+            "learn an introduction to front end basics such as, HTML, CSS, and Javascript, and Git.",
+          descEduDigitalent2: "complete practical assignments.",
+          descEduDigitalent3:
+            "successfully completed the HTML and CSS team project assignments.",
+          descEduDigitalent4:
+            "successfully completed individual Javascript project assignments.",
+          descEduDigitalent5:
+            "meet with a mentor to discuss practical assignments.",
+          studyEduMan: "High School Diploma in Mathematics & Science",
+          descEduMan1:
+            "Served as a member of the Student Council's Division of Noble Character and Moral Integrity for one term.",
+          descEduMan2: "Participated in biology Olympiad classes.",
         },
       },
       ina: {
@@ -166,6 +200,41 @@ i18next
           subTitleContact: "Jangan Malu, untuk menghubungi saya:",
           descContact:
             "Saya terbuka untuk berkolaborasi dan ingin mendiskusikan bagaimana keterampilan dan pengalaman saya dapat berkontribusi pada kesuksesan Anda. Baik itu proyek satu kali atau kemitraan berkelanjutan, saya di sini untuk mengeksplorasi dan menciptakan nilai bersama. Anda dapat menghubungi saya melalui email atau media sosial.",
+          educationalBg: ">_ Riwayat Pendidikan",
+          subtitleEducationBg:
+            "berikut riwayat pendidikan yang sudah saya tempuh:",
+          titleEdu: "Universitas Trunojoyo Madura",
+          studyEdu: "S1, Sistem Informasi",
+          descEdu1: "Aktivitas Saat Ini: Asisten Laboratorium.",
+          descEdu2:
+            "Buat proyek web menggunakan HTML, CSS, Javascript, boostrap, tailwind css, php, dan React JS.",
+          descEdu3:
+            "Lulus dari semua mata kuliah wajib dan tidak mengambil kembali mata kuliah apapun.",
+          descEduAlta1:
+            "berhasil merancang dan membangun produk teknologi yang dikerjakan secara tim, yakni capstone project.",
+          descEduAlta2:
+            "berhasil merancang dan membangun produk teknologi secara individual",
+          descEduAlta3:
+            "keterampilan dan pemahaman komprehensif tentang dasar-dasar frontend dan cara menerapkannya.",
+          descEduAlta4:
+            "keterampilan dan pemahaman komprehensif tentang penguasaan front end menggunakan framework react js dan cara mengimplementasikannya.",
+          descEduAlta5:
+            "mengerjakan tugas harian individu berupa kuis, rangkuman dan praktikum.",
+          descEduAlta6: "sesi langsung dengan mentor 3 kali seminggu.",
+          descEduAlta7: "IPK 94 dari 100.",
+          descEduDigitalent1:
+            "mempelajari pengenalan dasar-dasar front end seperti, HTML, CSS, dan Javascript, dan Git",
+          descEduDigitalent2: "menyelesaikan tugas praktikum.",
+          descEduDigitalent3:
+            "berhasil menyelesaikan tugas proyek tim HTML dan CSS.",
+          descEduDigitalent4:
+            "berhasil menyelesaikan tugas proyek Javascript individu.",
+          descEduDigitalent5:
+            "meet dengan mentor untuk mendiskusikan tugas praktikum.",
+          studyEduMan: "Sekolah Menengah Keatas, Matematika & Sains",
+          descEduMan1:
+            "Menjabat sebagai anggota OSIS Divisi Akhlak Mulia dan Integritas Moral selama satu periode.",
+          descEduMan2: "Berpartisipasi dalam kelas olimpiade biologi.",
         },
       },
     },
