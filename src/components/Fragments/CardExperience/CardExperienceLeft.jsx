@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
 
 const CardExperienceLeft = ({
   time,
@@ -9,11 +8,6 @@ const CardExperienceLeft = ({
   onClick,
   children,
 }) => {
-  useEffect(() => {
-    AOS.init({
-      once: false,
-    });
-  });
   return (
     <>
       <div className="timeline-middle">
@@ -30,12 +24,7 @@ const CardExperienceLeft = ({
           />
         </svg>
       </div>
-      <div
-        className="timeline-start mb-10 rounded-md shadow-md p-4"
-        data-aos="fade-left"
-        data-aos-duration="2000"
-        data-aos-delay="1400"
-      >
+      <div className="timeline-start mb-10 rounded-md shadow-md p-4">
         <div className="md:text-end">
           <time className="font-mono italic">{time}</time>
         </div>

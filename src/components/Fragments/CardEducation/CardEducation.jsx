@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { BsMortarboardFill } from "react-icons/bs";
-import AOS from "aos";
 
 const CardEducation = ({
   children,
@@ -11,29 +10,15 @@ const CardEducation = ({
   className,
   svgColor,
 }) => {
-  useEffect(() => {
-    AOS.init({
-      once: false,
-    });
-  });
   return (
     <>
-      <div
-        className="timeline-middle"
-        data-aos="fade-in"
-        data-aos-duration="2000"
-      >
+      <div className="timeline-middle">
         <BsMortarboardFill
           size={30}
           className={`${svgColor ? "text-primary" : svgColor}`}
         />
       </div>
-      <div
-        className={` ${className ? className : "timeline-end ml-3"}`}
-        data-aos="fade-left"
-        data-aos-duration="2000"
-        data-aos-delay="1500"
-      >
+      <div className={` ${className ? className : "timeline-end ml-3"}`}>
         <div className="flex items-center gap-2">
           <img src={logo} alt={logo} className="w-12 h-w-12" />
           <div className="">

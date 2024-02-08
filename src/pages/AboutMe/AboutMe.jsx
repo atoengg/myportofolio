@@ -38,7 +38,7 @@ const AboutMe = () => {
 
   useEffect(() => {
     AOS.init({
-      once: false,
+      once: true,
     });
   });
   return (
@@ -299,8 +299,8 @@ const AboutMe = () => {
               <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li
                   data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-delay="1200"
+                  data-aos-duration="3000"
+                  data-aos-delay="1100"
                 >
                   <hr />
                   <CardExperienceLeft
@@ -320,7 +320,7 @@ const AboutMe = () => {
                 </li>
                 <li
                   data-aos="fade-in"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-delay="1200"
                 >
                   <hr />
@@ -339,8 +339,8 @@ const AboutMe = () => {
                 </li>
                 <li
                   data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-delay="1200"
+                  data-aos-duration="3000"
+                  data-aos-delay="1300"
                 >
                   <hr />
                   <CardExperienceLeft
@@ -359,8 +359,8 @@ const AboutMe = () => {
                 </li>
                 <li
                   data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-delay="1200"
+                  data-aos-duration="3000"
+                  data-aos-delay="1400"
                 >
                   <hr />
                   <CardExperienceRight
