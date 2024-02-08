@@ -21,6 +21,7 @@ import ListDescExperience from "../../components/Elements/ListDescExperience/Lis
 import CardExperienceRight from "../../components/Fragments/CardExperience/CardExperienceRight";
 import CardEducation from "../../components/Fragments/CardEducation/CardEducation";
 import ListDescEdu from "../../components/Elements/ListDescEdu/ListDescEdu";
+import AOS from "aos";
 
 const AboutMe = () => {
   const { t } = useTranslation();
@@ -34,16 +35,31 @@ const AboutMe = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    AOS.init({
+      once: false,
+    });
+  });
   return (
     <>
       <Layouts>
         <div className="py-20">
           <section className="container">
-            <h4 className="font-bold uppercase text-2xl mb-3">
+            <h4
+              className="font-bold uppercase text-2xl mb-3"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               {t("aboutme")}
             </h4>
             <div className="flex flex-wrap items-center gap-8 lg:gap-0">
-              <div className="w-full mb-6 lg:w-6/12 lg:mb-0">
+              <div
+                className="w-full mb-6 lg:w-6/12 lg:mb-0"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
+              >
                 <div className="relative">
                   <div className="text-center">
                     <img
@@ -60,7 +76,12 @@ const AboutMe = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:w-5/12 ">
+              <div
+                className="w-full lg:w-5/12 "
+                data-aos="fade-in"
+                data-aos-duration="2000"
+                data-aos-delay="2000"
+              >
                 <h3 className="font-semibold mb-3 text-lg lg:text-xl">
                   {t("titleDescription")}
                 </h3>
@@ -87,15 +108,29 @@ const AboutMe = () => {
 
           <section className="container my-10">
             <div className="text-center">
-              <h4 className="font-bold uppercase text-2xl mb-3">
+              <h4
+                className="font-bold uppercase text-2xl mb-3"
+                data-aos="fade-in"
+                data-aos-duration="2000"
+              >
                 {t("mySkills")}
               </h4>
-              <p className="text-sm">{t("subtitleMySkills")}</p>
+              <p
+                className="text-sm"
+                data-aos="fade-in"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
+              >
+                {t("subtitleMySkills")}
+              </p>
 
               <Marquee autoFill pauseOnClick>
                 {dataSkills?.slice(0, 7).map((item, index) => (
                   <div
-                    className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer "
+                    className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer"
+                    data-aos="fade-in"
+                    data-aos-duration="2000"
+                    data-aos-delay="1400"
                     key={index}
                   >
                     <div className="flex items-center justify-center gap-2">
@@ -114,6 +149,9 @@ const AboutMe = () => {
                 {dataSkills?.slice(7, 14).map((item, index) => (
                   <div
                     className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer "
+                    data-aos="fade-in"
+                    data-aos-duration="2000"
+                    data-aos-delay="1400"
                     key={index}
                   >
                     <div className="flex items-center justify-center gap-2">
@@ -132,15 +170,30 @@ const AboutMe = () => {
 
           <section className="container my-10">
             <div className="text-center">
-              <h4 className="font-bold uppercase text-2xl mb-3">
+              <h4
+                className="font-bold uppercase text-2xl mb-3"
+                data-aos="fade-in"
+                data-aos-duration="2000"
+              >
                 {t("educationalBg")}
               </h4>
-              <p className="text-sm">{t("subtitleEducationBg")}</p>
+              <p
+                className="text-sm"
+                data-aos="fade-in"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
+              >
+                {t("subtitleEducationBg")}
+              </p>
             </div>
 
             <div className="mt-8 ">
               <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-                <li>
+                <li
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="1100"
+                >
                   <CardEducation
                     time={"Sep 2020 - Present"}
                     title={t("titleEdu")}
@@ -153,7 +206,11 @@ const AboutMe = () => {
                   </CardEducation>
                   <hr />
                 </li>
-                <li>
+                <li
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="1200"
+                >
                   <hr />
                   <CardEducation
                     time={"Aug 2023 - Dec 2023"}
@@ -175,7 +232,11 @@ const AboutMe = () => {
                   </CardEducation>
                   <hr className="bg-primary" />
                 </li>
-                <li>
+                <li
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="1300"
+                >
                   <hr className="bg-primary" />
                   <CardEducation
                     time={"Mar 2023 - Apr 2023"}
@@ -192,7 +253,11 @@ const AboutMe = () => {
                   </CardEducation>
                   <hr className="bg-primary" />
                 </li>
-                <li>
+                <li
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="1400"
+                >
                   <hr className="bg-primary" />
                   <CardEducation
                     time={"Jun 2017 - Feb 2020"}
@@ -213,15 +278,30 @@ const AboutMe = () => {
 
           <section className="container my-10">
             <div className="text-center">
-              <h4 className="font-bold uppercase text-2xl mb-3">
+              <h4
+                className="font-bold uppercase text-2xl mb-3"
+                data-aos="fade-in"
+                data-aos-duration="2000"
+              >
                 {t("myExperience")}
               </h4>
-              <p className="text-sm">{t("subtitleMyExperience")}</p>
+              <p
+                className="text-sm"
+                data-aos="fade-in"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
+              >
+                {t("subtitleMyExperience")}
+              </p>
             </div>
 
             <div className="mt-8">
               <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-                <li>
+                <li
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="1200"
+                >
                   <hr />
                   <CardExperienceLeft
                     time={"Nov 2023 - Dec 2023"}
@@ -238,7 +318,11 @@ const AboutMe = () => {
                   </CardExperienceLeft>
                   <hr />
                 </li>
-                <li>
+                <li
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="1200"
+                >
                   <hr />
                   <CardExperienceRight
                     title={t("experience2")}
@@ -253,7 +337,11 @@ const AboutMe = () => {
                   </CardExperienceRight>
                   <hr />
                 </li>
-                <li>
+                <li
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="1200"
+                >
                   <hr />
                   <CardExperienceLeft
                     time={"Mar 2022 - present"}
@@ -269,7 +357,11 @@ const AboutMe = () => {
                   </CardExperienceLeft>
                   <hr />
                 </li>
-                <li>
+                <li
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                  data-aos-delay="1200"
+                >
                   <hr />
                   <CardExperienceRight
                     title={t("experience4")}
