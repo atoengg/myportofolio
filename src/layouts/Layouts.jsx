@@ -19,7 +19,7 @@ const Layouts = ({ children }) => {
             width: "60px",
             height: "60px",
           }}
-          className="flex items-center justify-center top-[80%] lg:top-[85%]"
+          className="flex items-center justify-center top-[84%]"
         />
       </main>
     </>
