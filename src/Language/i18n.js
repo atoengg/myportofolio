@@ -120,6 +120,9 @@ i18next
           descEduMan1:
             "Served as a member of the Student Council's Division of Noble Character and Moral Integrity for one term.",
           descEduMan2: "Participated in biology Olympiad classes.",
+          textNotFound:
+            "Sorry, it seems the page you are looking for cannot be found. Maybe the page has been deleted, or it never existed. Make sure the URL you entered is correct or return to ",
+          textHalUtama: "the main page.",
         },
       },
       ina: {
@@ -235,6 +238,9 @@ i18next
           descEduMan1:
             "Menjabat sebagai anggota OSIS Divisi Akhlak Mulia dan Integritas Moral selama satu periode.",
           descEduMan2: "Berpartisipasi dalam kelas olimpiade biologi.",
+          textNotFound:
+            "Maaf, sepertinya halaman yang Anda cari tidak dapat ditemukan. Mungkin halaman tersebut telah dihapus, atau tidak pernah ada. Pastikan URL yang Anda masukkan benar atau kembali ke ",
+          textHalUtama: "halaman utama.",
         },
       },
     },

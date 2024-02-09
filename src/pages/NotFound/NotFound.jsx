@@ -2,8 +2,11 @@ import React from "react";
 import Layouts from "../../layouts/Layouts";
 import { imgNotFound } from "../../../image";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const NotFound = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Layouts>
@@ -16,11 +19,9 @@ const NotFound = () => {
                 className="lg:max-w-md"
               />
               <p className="text-center lg:px-32 lg:text-base mt-2">
-                Maaf, sepertinya halaman yang Anda cari tidak dapat ditemukan.
-                Mungkin halaman tersebut telah dihapus, atau tidak pernah ada.
-                Pastikan URL yang Anda masukkan benar atau kembali ke{" "}
+                {t("textNotFound")}
                 <span className="underline italic decoration-sky-500 text-sky-500">
-                  <Link to={"/"}>halaman utama.</Link>
+                  <Link to={"/"}>{t("textHalUtama")}</Link>
                 </span>
               </p>
             </div>
