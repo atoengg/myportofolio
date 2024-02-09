@@ -6,6 +6,7 @@ import Certificate from "../pages/Certificate/Certificate";
 import Project from "../pages/Project/Project";
 import Contact from "../pages/Contact/Contact";
 import SplashLoading from "../components/Fragments/SplashLoading/SplashLoading";
+import NotFound from "../pages/NotFound/NotFound";
 
 const Routing = () => {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,9 @@ const Routing = () => {
           <Route path="/certificate" element={<Certificate />} />
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* route ketika url tidak sesuai */}
+          <Route element={<NotFound />} path="*" />
         </Routes>
       )}
     </>
