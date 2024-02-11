@@ -7,7 +7,7 @@ const Layouts = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="">
+      <main className="relative">
         <div className="container mx-auto">{children}</div>
         <ScrollToTop
           top={200}
@@ -19,7 +19,7 @@ const Layouts = ({ children }) => {
             width: "60px",
             height: "60px",
           }}
-          className="flex items-center justify-center top-[84%]"
+          className="absolute flex items-center justify-center top-[82%]"
         />
       </main>
     </>
