@@ -111,16 +111,16 @@ const AboutMe = () => {
             <div className="text-center">
               <h4
                 className="font-bold uppercase text-2xl mb-3"
-                data-aos="fade-in"
-                data-aos-duration="2000"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
               >
                 {t("mySkills")}
               </h4>
               <p
                 className="text-sm"
-                data-aos="fade-in"
-                data-aos-duration="2000"
-                data-aos-delay="1000"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1000"
               >
                 {t("subtitleMySkills")}
               </p>
@@ -129,9 +129,9 @@ const AboutMe = () => {
                 {dataSkills?.slice(0, 7).map((item, index) => (
                   <div
                     className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer"
-                    data-aos="fade-in"
-                    data-aos-duration="2000"
-                    data-aos-delay="1400"
+                    // data-aos="fade-in"
+                    // data-aos-duration="2000"
+                    // data-aos-delay="1400"
                     key={index}
                   >
                     <div className="flex items-center justify-center gap-2">
@@ -150,9 +150,9 @@ const AboutMe = () => {
                 {dataSkills?.slice(7, 14).map((item, index) => (
                   <div
                     className="bg-transparent m-1 rounded-xl flex space-x-5 p-4 font-bold text-base cursor-pointer "
-                    data-aos="fade-in"
-                    data-aos-duration="2000"
-                    data-aos-delay="1200"
+                    // data-aos="fade-in"
+                    // data-aos-duration="2000"
+                    // data-aos-delay="1200"
                     key={index}
                   >
                     <div className="flex items-center justify-center gap-2">
@@ -173,17 +173,17 @@ const AboutMe = () => {
             <div className="text-center">
               <h4
                 className="font-bold uppercase text-2xl mb-3"
-                data-aos="fade-in"
-                data-aos-duration="2000"
-                data-aos-delay="1200"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1200"
               >
                 {t("educationalBg")}
               </h4>
               <p
                 className="text-sm"
-                data-aos="fade-in"
-                data-aos-duration="2000"
-                data-aos-delay="1200"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1200"
               >
                 {t("subtitleEducationBg")}
               </p>
@@ -192,9 +192,9 @@ const AboutMe = () => {
             <div className="mt-8 ">
               <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li
-                  data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-delay="1100"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1100"
                 >
                   <CardEducation
                     time={"Sep 2020 - Present"}
@@ -209,9 +209,9 @@ const AboutMe = () => {
                   <hr />
                 </li>
                 <li
-                  data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-delay="1200"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1200"
                 >
                   <hr />
                   <CardEducation
@@ -235,9 +235,9 @@ const AboutMe = () => {
                   <hr className="bg-primary" />
                 </li>
                 <li
-                  data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-delay="1300"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1300"
                 >
                   <hr className="bg-primary" />
                   <CardEducation
@@ -256,9 +256,9 @@ const AboutMe = () => {
                   <hr className="bg-primary" />
                 </li>
                 <li
-                  data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-delay="1400"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1400"
                 >
                   <hr className="bg-primary" />
                   <CardEducation
@@ -282,16 +282,16 @@ const AboutMe = () => {
             <div className="text-center">
               <h4
                 className="font-bold uppercase text-2xl mb-3"
-                data-aos="fade-in"
-                data-aos-duration="2000"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
               >
                 {t("myExperience")}
               </h4>
               <p
                 className="text-sm"
-                data-aos="fade-in"
-                data-aos-duration="2000"
-                data-aos-delay="1000"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1000"
               >
                 {t("subtitleMyExperience")}
               </p>
@@ -300,9 +300,9 @@ const AboutMe = () => {
             <div className="mt-8">
               <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li
-                  data-aos="fade-in"
-                  data-aos-duration="3000"
-                  data-aos-delay="1100"
+                // data-aos="fade-in"
+                // data-aos-duration="3000"
+                // data-aos-delay="1100"
                 >
                   <hr />
                   <CardExperienceLeft
@@ -321,9 +321,9 @@ const AboutMe = () => {
                   <hr />
                 </li>
                 <li
-                  data-aos="fade-in"
-                  data-aos-duration="3000"
-                  data-aos-delay="1200"
+                // data-aos="fade-in"
+                // data-aos-duration="3000"
+                // data-aos-delay="1200"
                 >
                   <hr />
                   <CardExperienceRight
@@ -340,9 +340,9 @@ const AboutMe = () => {
                   <hr />
                 </li>
                 <li
-                  data-aos="fade-in"
-                  data-aos-duration="3000"
-                  data-aos-delay="1300"
+                // data-aos="fade-in"
+                // data-aos-duration="3000"
+                // data-aos-delay="1300"
                 >
                   <hr />
                   <CardExperienceLeft
@@ -360,9 +360,9 @@ const AboutMe = () => {
                   <hr />
                 </li>
                 <li
-                  data-aos="fade-in"
-                  data-aos-duration="3000"
-                  data-aos-delay="1400"
+                // data-aos="fade-in"
+                // data-aos-duration="3000"
+                // data-aos-delay="1400"
                 >
                   <hr />
                   <CardExperienceRight
