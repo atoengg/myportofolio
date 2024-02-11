@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layouts from "../../layouts/Layouts";
 import {
   gif,
+  imgBlob,
   imgLeadFrontend,
   imgPelcode,
   imgTeamIT,
@@ -48,39 +49,39 @@ const AboutMe = () => {
           <section className="container">
             <h4
               className="font-bold uppercase text-2xl mb-3"
-              data-aos="fade-right"
-              data-aos-duration="2000"
+              // data-aos="fade-right"
+              // data-aos-duration="2000"
             >
               {t("aboutme")}
             </h4>
             <div className="flex flex-wrap items-center gap-8 lg:gap-0">
               <div
                 className="w-full mb-6 lg:w-6/12 lg:mb-0"
-                data-aos="zoom-in"
-                data-aos-duration="2000"
-                data-aos-delay="1000"
+                // data-aos="zoom-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="1000"
               >
-                <div className="relative">
+                <div className="relative overflow-hidden">
                   <div className="text-center">
                     <img
                       src={mee}
                       alt=""
-                      className="w-full max-w-[350px] h-auto"
+                      className="w-full max-w-[350px] h-auto "
                     />
                   </div>
 
-                  <div className="absolute w-full max-w-[350px] h-full -z-[1] top-[2%]">
+                  <div className="absolute w-full max-w-[350px] h-full -z-[1] top-[2%] ">
                     <span>
-                      <img src={gif} alt="" className="md:scale-125" />
+                      <img src={imgBlob} alt="" className="md:scale-125" />
                     </span>
                   </div>
                 </div>
               </div>
               <div
                 className="w-full lg:w-5/12 "
-                data-aos="fade-in"
-                data-aos-duration="2000"
-                data-aos-delay="2000"
+                // data-aos="fade-in"
+                // data-aos-duration="2000"
+                // data-aos-delay="2000"
               >
                 <h3 className="font-semibold mb-3 text-lg lg:text-xl">
                   {t("titleDescription")}

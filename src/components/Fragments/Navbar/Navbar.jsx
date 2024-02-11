@@ -70,9 +70,9 @@ const Navbar = () => {
                   <NavLink
                     to={item.loction}
                     activeClassName="active"
-                    className={"text-[#9ca3af] hover:text-[#030712]"}
+                    className={"text-[#9ca3af] hover:text-[#030712] "}
                   >
-                    <div className="text-[1.25rem] flex flex-col p-1 gap-1 items-center active-link lg:px-3 hover:rounded-full hover:transition-all hover:duration-200">
+                    <div className="text-[1.25rem] flex flex-col p-1 gap-1 items-center active-link lg:px-3 hover:rounded-full hover:transition-all hover:duration-200 focus:bg-[#9ca3af]">
                       {item.icon}
                       <span className="text-xs font-medium">{item.title}</span>
                     </div>

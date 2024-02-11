@@ -41,6 +41,7 @@ import logoAlterra from "./src/assets/alterra.png";
 import logoDigitalent from "./src/assets/digitalent.png";
 import logoMan from "./src/assets/man.png";
 import imgNotFound from "./src/assets/notFound.png";
+import imgBlob from "./src/assets/blob.png";
 
 export {
   imgHero,
@@ -86,4 +87,5 @@ export {
   logoDigitalent,
   logoMan,
   imgNotFound,
+  imgBlob,
 };
